@@ -1,15 +1,15 @@
 Flask: 
-pip install flask
- pip install apscheduler
- pip install flask-caching
- pip install flask_cors   
- pip install joblib
- pip install whois
- pip install xgboost
- pip install langchain-google-genai
- pip install crewai
- pip install langchain-community
-pip install scikit-learn
+- pip install flask
+- pip install apscheduler
+- pip install flask-caching
+- pip install flask_cors   
+- pip install joblib
+- pip install whois
+- pip install xgboost
+- pip install langchain-google-genai
+- pip install crewai
+- pip install langchain-community
+- pip install scikit-learn
 
 --> python cybernews.py
 _____
