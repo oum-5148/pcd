@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    display: block;
+    align-items: center;
+}
+.sidebar{
+    color: white;
+}
+
+.toggle-theme-btn{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.toggle{
+    margin-left: 15px;
+}
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollable-content {
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: calc(100vh - 64px); /* Set the height of the scrollable area (viewport height - header height) */
+  }
+  

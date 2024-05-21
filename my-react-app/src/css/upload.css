@@ -1,0 +1,28 @@
+@import url('./node_modules/bootstrap/dist/css/bootstrap.css');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .wrapper1{
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+    padding: 20px;
+  }
+  
+  .custom-form{
+    width: 100%;
+  }
+  
+  .btn{
+    margin: 20px 0;
+  }
+  
+  
+  
+  
+

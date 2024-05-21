@@ -1,0 +1,32 @@
+.container{
+    width: fit-content;
+}
+
+.employee {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1px;
+}
+.info{
+    display: block;
+    text-align: center;
+    color: black;
+}
+
+.employee img {
+    width: 300px; /* Adjust the width as needed */
+    height: 250px;
+    margin-right: 5px; /* Add some space between the image and the text */
+    border-radius: 50%;
+}
+.company {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+

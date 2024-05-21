@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/*Sidebar serction  */
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.logo{
+  width: 100%;
+  height: auto;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  display: block;
+  align-items: center;
+}
+.sidebar{
+  color: white;
+}
+
+.toggle-theme-btn{
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.toggle{
+  margin-left: 15px;
+}
+.container {
+  flex: 2;
+  flex-basis:75%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px;
+
+}
+
+/*Main top serction  */
+
+.main-top{
+  display: flex;
+  width: 100%;
+}
+.main-top h1{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.add-icon {
+  position: absolute;
+  right: 0;
+  margin: 30px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+  font-size: 3rem !important; /* Adjust the font size as needed */
+}
+
+
+.delete-icon{
+  margin-left: 10px;
+
+}
+
+
+
+/*Employee List serction  */
+.employee{
+  margin: 20px;
+  text-transform: capitalize;
+}
+.employee-list{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr{
+  color: #fff;
+  background: #34AF6D;
+  text-align: left;
+  font-weight: bold;
+  text-align: center; /* Center align the content of the table */
+}
+.table th,
+.table td{
+  padding: 12px 15px;
+  align-content: center;
+  align-items: center;
+}
+
+
+.table tbody tr{
+  border-bottom: 1px solid #ddd;
+  
+}
+.table tbody tr:nth-of-type(odd){
+  background: #f3f3f3;
+}
+.table tbody tr.active{
+  font-weight: bold;
+  color: #4AD489;
+}
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid #4AD489;
+}
+.table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+}
+.table button:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5rem;
+}
+
+
+/* pop up */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  background: #fff;
+  width: 30%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Apply a backdrop filter to create the blur effect */
+.employee-list {
+  backdrop-filter: blur(5px);
+}
+
+/* Style for the form labels */
+.popup-inner label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style for the form inputs */
+.popup-inner input[type="text"],
+.popup-inner input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Style for the buttons */
+.popup-inner button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.popup-inner button.save {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.popup-inner button.cancel {
+  background-color: #f44336; /* Red */
+  color: white;
+}

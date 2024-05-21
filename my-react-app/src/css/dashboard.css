@@ -1,0 +1,122 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+/* Main */
+.main_container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+}
+  
+.main_title {
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    justify-content: space-between;
+    color: #24252D;
+}
+
+/* Colors and Variables */
+:root {
+    --panel-color: #FFF;
+    --text-color: #000;
+    --black-light-color: #707070;
+    --border-color: #e6e5e5;
+    --toggle-color: #DDD;
+    --box1-color: #8cbef4;
+    --box2-color: #fde9ba;
+    --box3-color: #E7D1FC;
+
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+
+
+
+/* Boxes */
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.boxes .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    width: calc(100% / 3 - 15px);
+    padding: 15px 20px;
+    background-color: var(--box1-color);
+    transition: var(--tran-05);
+}
+
+.boxes .box .text {
+  padding-top: 10px;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.boxes .box .number {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.boxes .box.box2 {
+    background-color: var(--box2-color);
+}
+
+.boxes .box.box3 {
+    background-color: var(--box3-color);
+}
+
+/* Responsive */
+@media (max-width: 780px) {
+    .boxes .box {
+        width: calc(100% / 2 - 15px);
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 560px) {
+    .boxes .box {
+        width: 100%;
+    }
+}
+
+.charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 60px;
+    height: 300px;
+    color: #000;
+}
+
+/* Medium <= 992px */
+@media screen and (max-width: 928px) {
+    .main_cards {
+        grid-template-columns: repeat(2, 1fr); /* Two boxes per row */
+        gap: 5px;
+        margin-bottom: 0;
+    }
+}
+
+/* Small <= 768px */
+@media screen and (max-width: 768px) {
+    .main_cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 0;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+}

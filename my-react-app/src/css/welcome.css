@@ -1,0 +1,73 @@
+
+.welcome-container {
+    display: flex;
+    height: 100vh;
+    background-color: #24252D;
+    color: white;
+}
+
+.left-half, .right-half{
+    flex: 1;
+    padding: 20px;
+}
+
+.left-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-half{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+
+}
+
+
+.content p {
+    font-size: 21px; 
+    font-family: 'Inter', sans-serif; 
+    font-weight: 400; 
+    line-height: 1.5; 
+}
+.content h1 {
+   font-family: 'Julius Sans One', sans-serif;
+   
+}
+
+.welcome-message {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.create-account button, .login button {
+    background-color: #BE4A31;
+    color: white;
+    padding: 15px 50px; /* Increase padding for bigger buttons */
+    border: none;
+    border-radius: 50px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 30px; 
+}
+.pretty-heading {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #333; /* Adjust the color as needed */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+
+
+
+
+

@@ -1,0 +1,84 @@
+.custom-sidebar {
+    width: 70px; /* Default width */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    background-color: #f0f4f9;
+    padding: 25px 20px;
+    transition: width 0.3s ease; /* Smooth transition for width change */
+}
+
+.custom-sidebar.extended {
+    width: 200px; /* Adjusted width when extended */
+}
+
+.custom-sidebar img {
+    width: 25px; /* Increase image size */
+}
+
+.custom-sidebar .custom-menu {
+    display: block;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Increase font size */
+}
+
+.custom-sidebar .custom-new-chat {
+    margin-top: 20px; /* Increase margin */
+    display: inline-flex;
+    align-items: center;
+    gap: 15px; /* Increase gap */
+    padding: 15px 20px; /* Increase padding */
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    font-size: 16px; /* Increase font size */
+    color: gray;
+    cursor: pointer;
+}
+
+.custom-sidebar .custom-recent {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s;
+}
+
+.custom-sidebar .custom-recent-title {
+    margin-top: 30px; /* Increase margin */
+    margin-bottom: 20px; /* Increase margin */
+    font-size: 20px; /* Increase font size */
+}
+
+.custom-sidebar .custom-recent-entry {
+    display: flex;
+    align-items: start;
+    gap: 15px; /* Increase gap */
+    padding: 15px; /* Increase padding */
+    padding-right: 50px; /* Increase right padding */
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+}
+
+.custom-sidebar .custom-recent-entry:hover {
+    background-color: #e2e6eb;
+}
+
+.custom-sidebar .custom-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-sidebar .custom-bottom-item {
+    padding-right: 2px; /* Adjust padding */
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+}
+
+@media (max-width: 600px) {
+    .custom-sidebar {
+        display: none;
+    }
+}
