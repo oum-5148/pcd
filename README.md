@@ -20,8 +20,11 @@ React :
 ____
 MongoDB:
 1- install mongodb server community
+
 2- install mongodb compass
+
 3- download mongoDB for VSCode extension 
+
 4- connect to the database
 *****
 - npm install nodemon
@@ -32,4 +35,5 @@ MongoDB:
 - npm install jsonwebtoken
 // in case of bycrypt error: npm uninstall bcrypt
 npm install bcrypt
+
 --> npm start
