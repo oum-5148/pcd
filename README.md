@@ -1,5 +1,9 @@
 # A demo of Cyberhook: 
-[![Watch the video](https://raw.githubusercontent.com/oum-5148/pcd/main/thumbnail.png)](https://raw.githubusercontent.com/oum-5148/pcd/main/demo.mp4)
+### Watch the Video
+<video width="640"  controls>
+    <source src="demo.mp4" type="video/mp4">
+</video>
+
 
 ## Setting up and running the project:
 ### Flask: 
