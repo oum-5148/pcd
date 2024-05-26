@@ -1,24 +1,31 @@
-Flask: 
-- pip install flask
-- pip install apscheduler
-- pip install flask-caching
-- pip install flask_cors   
-- pip install joblib
-- pip install whois
-- pip install xgboost
-- pip install langchain-google-genai
-- pip install crewai
-- pip install langchain-community
-- pip install scikit-learn
+# A demo of Cyberhook: 
+<video src="path/to/video.mp4" width="320" height="240" controls></video>
 
---> python cybernews.py
-_____
-React : 
-- npm install vite --save-dev
---> npm run dev
+## Setting up and running the project:
+### Flask: 
+```bash
+cd .\flask-server\ 
+pip install flask apscheduler flask-caching flask_cors joblib whois xgboost langchain-google-genai crewai langchain-community scikit-learn
+``` 
+To run the scripts: 
 
-____
-MongoDB:
+```bash
+python3 cybernews.py
+python3 EmailChecker.py
+python3 URLChecker
+```
+
+### React : 
+```bash
+cd .\my-react-app\
+npm install vite --save-dev
+```
+To run: 
+```bash
+npm run dev
+```
+
+### MongoDB:
 
 1- install mongodb server community
 
@@ -27,14 +34,17 @@ MongoDB:
 3- download mongoDB for VSCode extension 
 
 4- connect to the database
-*****
-- npm install nodemon
-- npm install bcrypt
-- npm install express
-- npm install mongoose
-- npm install body-parser
-- npm install jsonwebtoken
-// in case of bycrypt error: npm uninstall bcrypt
-npm install bcrypt
+```bash
+cd .\backend\
+npm install nodemon bcrypt express mongoose body-parser jsonwebtoken
+ ```
 
---> npm start
+In case of bycrypt error:
+```bash
+npm uninstall bcrypt
+npm install bcrypt
+```
+To run:
+```bash
+npm start
+```
